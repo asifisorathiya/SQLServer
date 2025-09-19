@@ -16,3 +16,7 @@ ADD email varchar(255) not null
 --drop column PHONE
 ALTER TABLE PERSONS
 DROP COLUMN PHONE
+
+------DROP TABle
+
+DROP TABLE PERSONS
