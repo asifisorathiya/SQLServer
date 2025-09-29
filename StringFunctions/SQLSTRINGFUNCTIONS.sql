@@ -32,5 +32,10 @@ FROM DimCustomer
 SELECT FirstName, LEFT(FirstName,2) AS LEFT_LEN,RIGHT(FirstName,2) AS RIGHT_LEN
 FROM DimCustomer
 
+--SUBSTRING
+SELECT FirstName, SUBSTRING(FirstName,1,2) SUB_NAME
+FROM DimCustomer
+
+
 
 
