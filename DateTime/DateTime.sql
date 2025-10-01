@@ -35,3 +35,8 @@ SELECT [ProductKey]
       ,[DueDate]
 	  ,EOMOnTH([DueDate]) Order_DP	  
   FROM [AdventureWorksDW2022].[dbo].[FactInternetSales]
+
+  --year data
+  SELECT count(*),Year(DueDate) as OrderYear	  
+  FROM [AdventureWorksDW2022].[dbo].[FactInternetSales]
+  group by Year(DueDate)
